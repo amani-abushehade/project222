@@ -1,0 +1,681 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body{
+    perspective: 700px;
+}
+
+header{
+    height: 150px;
+    width: 81%;
+    margin: auto;
+    overflow: auto;
+}
+
+.image1{
+    height: 100px;
+    float: left;
+    margin-top: 10px;
+}
+.list1{
+    list-style: none;
+    float: left;
+    margin-top: 25px;
+    margin-left: 90px;
+    margin-right: 5px;
+
+}
+.list3{
+    list-style: none;
+    float: left;
+    margin-top: 25px;
+}
+.header1{
+    display: inline-block;
+    height: 40px;
+    width: auto;
+    position: relative;
+    margin-top: 30px;
+    margin-right: 25px;
+
+}
+.header1::after{
+    position: absolute;
+    content: "";
+
+    width: 0;
+    height: 0;
+    top: 0;
+    left: 0;
+
+    background-color: rgb(168, 29, 11);
+    transition: .4s;
+    visibility: hidden;
+    opacity: 0;
+    transition-delay: .14s;
+}
+.header1:hover::after{
+    width: 100%;
+    height: 2px;
+    visibility: visible;
+    opacity: 1;
+}
+.header1::before{
+    position: absolute;
+    content: "";
+
+    width: 0;
+    height: 0;
+    bottom:  0;
+    left: 0;
+
+    background-color: rgb(168, 29, 11);
+    transition: .4s;
+    visibility: hidden;
+    opacity: 0;
+    transition-delay: .14s;
+}
+.header1:hover::before{
+    width: 100%;
+    height: 2px;
+    visibility: visible;
+    opacity: 1;
+}
+.border{
+    width: 2px;
+    height: 40px;
+    background-color: rgb(168, 29, 11);
+    position: absolute;
+    transition: .4s;
+    visibility: hidden;
+    opacity: 0;
+    transform: scale(0);
+}
+.border1{
+    width: 2px;
+    height: 40px;
+    background-color: rgb(168, 29, 11);
+    right: 0;
+    top: 0;
+    position: absolute;
+    transition: .4s;
+    visibility: hidden;
+    opacity: 0;
+    transform: scale(0);
+}
+.header1:hover .border{
+    visibility: visible;
+    transform: scale(1);
+    opacity: 1;
+}
+.header1:hover .border1{
+    visibility: visible;
+    transform: scale(1);
+    opacity: 1;
+}
+
+.list1 .header1 li{
+    display: inline-block;
+    margin-top: 7px;
+   
+}
+.list3 .header1 li{
+    display: inline-block;
+    margin-top: 7px;
+   
+}
+.list1 li a{
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+    color: rgb(87, 85, 85);
+ 
+    
+}
+.list3 li a{
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+    color: rgb(87, 85, 85);
+    
+}
+
+
+.drop{
+    width: 400px;
+    height: 180px;
+    border: 2px solid rgb(168, 29, 11) ;
+    position: absolute;
+    margin-top: 100px;
+    margin-left:194px;
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    visibility: hidden;
+    opacity: 0; 
+    transform: scale(0);
+}
+.divperant:hover .drop {
+    visibility: visible;
+    opacity: 1;
+    transition: .5s; 
+    transform: scale(1);
+}
+.dottet{
+    display: block;
+    margin-top: -9px;
+    height: 23px;
+}
+
+.drop li{
+    font-size: 20px;
+    list-style: none;
+    margin-top: 3px;
+}
+
+.icon1{
+    float: right;
+    position: relative;
+}
+.zero{
+    width: 12px;
+    height:19px;
+    text-align: center;
+    position: absolute;
+    margin-left: 155px;
+    margin-top: -15px;
+    font-size: 17px;
+    border-radius: 50%;
+    background-color: rgb(168, 29, 11);
+    color: aliceblue;
+}
+.icon1 i{
+    margin-top: 50px;
+    font-size: 33px;
+    color: black;
+    margin-left: 15px;
+}
+
+.sheader1{
+    font-size: 17px;
+    font-weight: 600;
+    display: inline-block;
+    margin-left: 4px;
+}
+main{
+    width: 80%;
+    height: 550px;
+    margin: auto;
+    background-image: url(../image/52c06cea9f7f83d1ff425ba4210cfb9b_screen.png);
+}
+.mainh1{
+   color: rgb(168, 29, 11);
+   width: 500PX;
+   font-size: 70px;
+   text-transform: capitalize;
+   margin-left: 120px;
+   
+
+}
+.butn{
+    margin-left: 120px;
+    background-color: rgb(168, 29, 11);
+    color: whitesmoke;
+    width: 90px;
+    height: 35px;
+    border: 0px;
+
+}
+.section1{
+    width: 80%;
+    margin: auto;
+}
+.h11{
+    text-align: center;
+    font-size: 25px;
+}
+.line{
+    width: 100px;
+    height: 2px;
+    background-color: rgb(168, 29, 11);
+    margin: auto;
+    transition: 1s;
+    margin-top: 8px;
+}
+.h11:hover .line{
+    transform: scalex(1.5);
+}
+.specdiv{
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+}
+.specdiv1{
+    width: 310px;
+    height: 450px;
+}
+.specimg{
+    width: 310px;
+    height: 350px;
+}
+.specspan{
+    color: rgb(160, 156, 156);
+}
+.spech2{
+    width: 260px;
+}
+.speci{
+    position: absolute;
+    margin-left: 275px;
+    margin-top: -38px;
+    font-size: 25px;
+    background-color: rgba(168, 29, 11, 0.726);
+    color: aliceblue;
+    width: 33px;
+    height: 33px;
+    text-align: center;
+    padding: 4px;
+    visibility: hidden;
+    opacity: 0;
+}
+.specdiv1:hover .speci{
+    visibility: visible;
+    opacity: 1;
+}
+.section2{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    position: relative;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.d1{
+    width: 620px;
+    height: 300px;
+    background-color:rgb(226, 214, 214) ;
+    padding: 15px;
+    position: absolute;
+    z-index: 2;
+}
+.d1h1{
+    margin-top: -50px;
+    margin-left: 60px;
+    font-size: 27px;
+    color:rgb(76, 72, 72);
+}
+.d1span{
+    display: block;
+    margin-left: 60px;
+    color:rgba(128, 128, 128, 0.911);
+    font-size: large;
+}
+.d1p{
+    font-size: large;
+    color: rgba(128, 128, 128, 0.938);
+    line-height: 25px;
+}
+.line2{
+    width:50px;
+    height: 2px;
+    background-color:black;
+    float: right;
+    margin-left: 10px;
+    
+}
+.d2{
+    width: 300px;
+    height: 300px;
+    background-image: url(../image/ساعة5.jpg);
+    padding: 15px;
+    position: absolute;
+    margin-left: 644px;
+    text-transform: capitalize;
+    transition: .7s;
+    z-index: 2;
+}
+.d3{
+    width: 300px;
+    height: 300px;
+    background-image: url(../image/ساعة6.jpg);
+    padding: 15px;
+    position: absolute;
+    margin-left: 967px;
+    text-transform: capitalize;
+    transition: .7s;
+    z-index: 2;
+}
+.d2span{
+    font-size: 20px;
+    color:rgb(71, 67, 67);
+}
+.d3span{
+    font-size: 20px;
+    color:rgb(173, 167, 167);
+}
+.d2h2{
+    font-size: 30px;
+    color: black;
+}
+.d2:hover{
+    transform: scale(1.13);
+}
+.d3:hover{
+    transform: scale(1.12);
+}
+/* //////////////////////////////////////////////////////////////////////////////////////////// */
+
+.section3{
+    width: 80%;
+    display: flex;
+    margin: auto;
+    margin-top: 300px;
+    position: relative;
+    background-color: white;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.div1{
+    width: 240px;
+    height: 150px;
+    position: absolute;
+}
+.br{
+    width: 240px;
+    height: 30px;
+    position: absolute;
+    background-color: white;
+    z-index: 1;
+}
+.imggg{
+    margin-left: 78px;
+    margin-top: 30px;
+    transition: .6s;
+
+}
+.div1:hover  .imggg{
+    transform: translateY(-100px);
+}
+.title2{
+    height: 100px;
+    width: 205px;
+    position: absolute;
+    margin-top: -100px;
+    background-color: white;
+    text-align: center;
+}
+.img1{
+    width: 50px;
+    height: 150px;
+}
+.div1h2{
+    font-size: 21px;
+}
+.div1p{
+    font-size: 17px;
+    color: rgb(173, 167, 167);
+}
+.linev{
+    height: 100px;
+    width: 1px;
+    background-color: black;
+    margin-top: -155px;
+    margin-left: 230px;
+}
+.div2{
+    width: 240px;
+    height: 150px;
+    position: absolute;
+    margin-left: 260px;
+
+}
+.div2:hover  .imggg{
+    transform: translateY(-100px);
+}
+.div3{
+    width: 240px;
+    height: 150px;
+    position: absolute;
+    margin-left: 520px;
+
+}
+.div3:hover  .imggg{
+    transform: translateY(-100px);
+}
+.div4{
+    width: 240px;
+    height: 150px;
+    position: absolute;
+    margin-left: 780px;
+
+}
+.div4:hover  .imggg{
+    transform: translateY(-100px);
+}
+.div5{
+    width: 240px;
+    height: 150px;
+    position: absolute;
+    margin-left: 1040px;
+
+}
+.div5:hover  .imggg{
+    transform: translateY(-100px);
+}
+.brr{
+    width: 240px;
+    height: 100px;
+    margin-top: -70px;
+    position: absolute;
+    background-color: white;
+    z-index: 1;
+}
+.lineh{
+    width: 80%;
+    height: 1px;
+    margin: auto;
+    margin-top: 185px;
+    background-color: rgba(0, 0, 0, 0.473);
+}
+/* /////////////////////////////////////////////////////////////////////////// */
+.wordsp{
+    text-align: center;
+    font-size: 20px;
+    color: rgba(0, 0, 0, 0.685);
+}
+.section4{
+    width: 80%;
+    margin: auto;
+}
+.last{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.big{
+    width: 380px;
+    height: 530px;
+    position: relative;
+}
+.front {
+    width: 380px;
+    height: 530px;
+    z-index: 1;
+    position: absolute;
+}
+.back{
+    width: 380px;
+    height: 480px;
+    position: absolute;
+    background-image: url(../image/shum5.jpg);
+    opacity:0;
+    visibility: hidden;
+    transform: scaleX(0);
+    transition: .2s;
+    text-align: center;
+}
+.back1{
+    width: 380px;
+    height: 480px;
+    position: absolute;
+    background-image: url(../image/shum11.jpg);
+    opacity:0;
+    visibility: hidden;
+    transform: scaleX(0);
+    transition: .2s;
+    text-align: center;
+}
+.back2{
+    width: 380px;
+    height: 480px;
+    position: absolute;
+    background-image: url(../image/shum12.jpg);
+    opacity:0;
+    visibility: hidden;
+    transform: scaleX(0);
+    transition: .2s;
+    text-align: center;
+}
+.back3{
+    width: 380px;
+    height: 480px;
+    position: absolute;
+    background-image: url(../image/shum8.jpg);
+    opacity:0;
+    visibility: hidden;
+    transform: scaleX(0);
+    transition: .2s;
+    text-align: center;
+}
+.back4{
+    width: 380px;
+    height: 480px;
+    position: absolute;
+    background-image: url(../image/shum22.jpg);
+    opacity:0;
+    visibility: hidden;
+    transform: scaleX(0);
+    transition: .2s;
+    text-align: center;
+}
+.back5{
+    width: 380px;
+    height: 480px;
+    position: absolute;
+    background-image: url(../image/shum23.jpg);
+    opacity:0;
+    visibility: hidden;
+    transform: scaleX(0);
+    transition: .2s;
+    text-align: center;
+}
+.iconimg{
+    width: 380px;
+    height: 480px;
+}
+.back i{
+    padding:8px ;
+    color: whitesmoke;
+    background-color: rgba(168, 29, 11, 0.774);
+    width: 40px;
+    height: 40px;
+    font-size: 25px;
+    margin-top: 85%;
+}
+.back1 i{
+    padding:8px ;
+    color: whitesmoke;
+    background-color: rgba(168, 29, 11, 0.774);
+    width: 40px;
+    height: 40px;
+    font-size: 25px;
+    margin-top: 85%;
+}
+.back2 i{
+    padding:8px ;
+    color: whitesmoke;
+    background-color: rgba(168, 29, 11, 0.774);
+    width: 40px;
+    height: 40px;
+    font-size: 25px;
+    margin-top: 85%;
+}
+.back3 i{
+    padding:8px ;
+    color: whitesmoke;
+    background-color: rgba(168, 29, 11, 0.774);
+    width: 40px;
+    height: 40px;
+    font-size: 25px;
+    margin-top: 85%;
+}
+.back4 i{
+    padding:8px ;
+    color: whitesmoke;
+    background-color: rgba(168, 29, 11, 0.774);
+    width: 40px;
+    height: 40px;
+    font-size: 25px;
+    margin-top: 85%;
+}
+.back5 i{
+    padding:8px ;
+    color: whitesmoke;
+    background-color: rgba(168, 29, 11, 0.774);
+    width: 40px;
+    height: 40px;
+    font-size: 25px;
+    margin-top: 85%;
+}
+.front .icon1{
+    color: gold;
+    float: left;
+    font-size: large;
+}
+.front .icon2{
+    color: black;
+    font-size: large;
+}
+.big:hover .back {
+    opacity: .7;
+    z-index: 2;
+    visibility: visible;
+    transform: scaleX(1);
+}
+.big:hover .back1 {
+    opacity: .7;
+    z-index: 2;
+    visibility: visible;
+    transform: scaleX(1);
+}
+.big:hover .back2 {
+    opacity: .7;
+    z-index: 2;
+    visibility: visible;
+    transform: scaleX(1);
+}
+.big:hover .back3 {
+    opacity: .7;
+    z-index: 2;
+    visibility: visible;
+    transform: scaleX(1);
+}
+.big:hover .back4 {
+    opacity: .7;
+    z-index: 2;
+    visibility: visible;
+    transform: scaleX(1);
+}
+.big:hover .back5 {
+    opacity: .7;
+    z-index: 2;
+    visibility: visible;
+    transform: scaleX(1);
+}
+.iconp{
+    font-size: 19px;
+}
